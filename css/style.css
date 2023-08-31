@@ -26,10 +26,10 @@ footer span{
 .main-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Detta kommer att placera logotypen till vänster */
+    align-items: flex-start;
     background-color: white;
-    width: 100%; /* Säkerställ att detta element tar upp hela bredden */
-    padding-left: 20px; /* Lite vänsterpadding för att ge logotypen lite utrymme från kanten */
+    width: 100%;
+    padding-left: 20px;
 }
 
 .full-width-image {
@@ -38,12 +38,12 @@ footer span{
 
 .image-text {
     position: absolute;
-    top: 23%;  /* Centrerar texten vertikalt */
-    left: 5%;  /* Flyttar texten lite från vänsterkanten */
-    transform: translateY(-50%);  /* Finjustering för vertikal centrering */
-    font-size: 4rem;  /* Gör texten jättestor */
-    color: #2d2929;  /* Välj en passande färg, t.ex. vit */
-    z-index: 1;  /* Se till att texten ligger ovanpå bilden */
+    top: 23%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #2d2929;
+    z-index: 1;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -59,8 +59,8 @@ footer span{
 .main-nav {
     display: flex;
     gap: 40px;
-    justify-content: center; /* Centrera länkarna horisontellt */
-    width: 100%; /* Låt navigationen ta upp hela bredden */
+    justify-content: center;
+    width: 100%;
     padding-bottom: 30px;
    
 }
@@ -73,20 +73,20 @@ footer span{
 
 
 .full-width-image {
-    width: 100%; /* Gör så att div-tagen tar upp hela skärmens bredd */
-    overflow: hidden; /* För att säkerställa att bilden inte flyter utanför div-tagen */
+    width: 100%;
+    overflow: hidden;
 }
 
 .full-width-image img {
-    width: 100%; /* Gör så att bilden tar upp hela bredden av div-tagen */
-    height: auto; /* Behåll bildens ursprungliga höjdproportion */
-    display: block; /* Tar bort eventuella marginaler */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
 .main-nav a {
-    text-decoration: none;  /* Tar bort understrykningen under länkarna */
-    color: black;  /* Ger länkarna svart färg */
+    text-decoration: none;
+    color: black;
 }
 
 .my-logo{
@@ -99,7 +99,7 @@ footer span{
 
 
 .icon-container {
-    text-align: center; /* Centrerar innehållet i containern */
+    text-align: center;
     padding: 60px 60px;
 
 }
@@ -116,8 +116,8 @@ footer span{
     text-decoration: none; 
     color: inherit; 
     margin-right: 30px; 
-    display: inline-block; /* Detta gör att ikonerna visas bredvid varandra men med möjlighet till vertikal justering */
-    vertical-align: middle; /* Justerar ikonerna vertikalt till mitten av sin container */
+    display: inline-block;
+    vertical-align: middle;
     
 }
 
@@ -134,7 +134,7 @@ footer span{
 
 
 .icon-container a:hover i {
-    color: #c48c8c; /* En färgändring vid hover. Ändra till önskad färg */
+    color: #c48c8c;
     
 }
 
@@ -163,15 +163,15 @@ footer span{
     background: #e2dede;
     height: 40px;
     display: flex;
-    justify-content: center; /* Centrera innehållet horisontellt */
-    align-items: center;     /* Centrera innehållet vertikalt */
-    gap: 100px;               /* Mellanrum mellan varje info-item */
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 .info-item {
     display: flex;
-    align-items: center;     /* Centrera ikon och text vertikalt */
-    gap: 5px;                /* Mellanrum mellan ikon och text */
+    align-items: center;
+    gap: 5px;
 }
 
 .info-item i {
