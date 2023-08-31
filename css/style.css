@@ -1,0 +1,179 @@
+footer{
+    background-color: #393636;
+    color: #969fa3;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+footer span{
+    color: #c48c8c
+}
+
+.campaign-header{
+    background-color: rgb(27, 25, 25);
+    padding-top: 6px;
+
+}
+
+.campaign-text{
+    text-align: center;
+    color: aliceblue;
+    padding: 5px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Detta kommer att placera logotypen till vänster */
+    background-color: white;
+    width: 100%; /* Säkerställ att detta element tar upp hela bredden */
+    padding-left: 20px; /* Lite vänsterpadding för att ge logotypen lite utrymme från kanten */
+}
+
+.full-width-image {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 23%;  /* Centrerar texten vertikalt */
+    left: 5%;  /* Flyttar texten lite från vänsterkanten */
+    transform: translateY(-50%);  /* Finjustering för vertikal centrering */
+    font-size: 4rem;  /* Gör texten jättestor */
+    color: #2d2929;  /* Välj en passande färg, t.ex. vit */
+    z-index: 1;  /* Se till att texten ligger ovanpå bilden */
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Centrera länkarna horisontellt */
+    width: 100%; /* Låt navigationen ta upp hela bredden */
+    padding-bottom: 30px;
+   
+}
+
+.main-nav a:hover {
+    font-weight: bold;
+    color: #d2bcbc;
+}
+
+
+
+.full-width-image {
+    width: 100%; /* Gör så att div-tagen tar upp hela skärmens bredd */
+    overflow: hidden; /* För att säkerställa att bilden inte flyter utanför div-tagen */
+}
+
+.full-width-image img {
+    width: 100%; /* Gör så att bilden tar upp hela bredden av div-tagen */
+    height: auto; /* Behåll bildens ursprungliga höjdproportion */
+    display: block; /* Tar bort eventuella marginaler */
+}
+
+
+.main-nav a {
+    text-decoration: none;  /* Tar bort understrykningen under länkarna */
+    color: black;  /* Ger länkarna svart färg */
+}
+
+.my-logo{
+    width: 10%;
+    height: auto;
+
+}
+
+
+
+
+.icon-container {
+    text-align: center; /* Centrerar innehållet i containern */
+    padding: 60px 60px;
+
+}
+
+.icon-container h2 {
+    text-align: center; 
+    width: 100%; 
+    
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.icon-container a {
+    text-decoration: none; 
+    color: inherit; 
+    margin-right: 30px; 
+    display: inline-block; /* Detta gör att ikonerna visas bredvid varandra men med möjlighet till vertikal justering */
+    vertical-align: middle; /* Justerar ikonerna vertikalt till mitten av sin container */
+    
+}
+
+.icon-container a:last-child {
+    margin-right: 0; 
+    
+}
+
+.icon-container i {
+    font-size: 100px; 
+    transition: color 0.3s ease; 
+    margin-right: 50px;
+}
+
+
+.icon-container a:hover i {
+    color: #c48c8c; /* En färgändring vid hover. Ändra till önskad färg */
+    
+}
+
+.icon-container .icon1 {
+    color: rgb(149, 126, 126);
+}
+
+.icon-container .icon2 {
+    color: rgb(119, 119, 143);
+}
+
+.icon-container .icon3 {
+    color: rgb(117, 143, 117);
+}
+
+.icon-container .icon4 {
+    color: rgb(126, 126, 100);
+}
+
+.icon-container .icon5 {
+    color: rgb(145, 123, 145);
+}
+
+
+.infospace-top {
+    background: #e2dede;
+    height: 40px;
+    display: flex;
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center;     /* Centrera innehållet vertikalt */
+    gap: 100px;               /* Mellanrum mellan varje info-item */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;     /* Centrera ikon och text vertikalt */
+    gap: 5px;                /* Mellanrum mellan ikon och text */
+}
+
+.info-item i {
+    font-size: 20px;
+}
