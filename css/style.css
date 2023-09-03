@@ -1,3 +1,5 @@
+
+
 footer{
     background-color: #393636;
     color: #969fa3;
@@ -14,6 +16,7 @@ footer span{
 .campaign-header{
     background-color: rgb(27, 25, 25);
     padding-top: 6px;
+    
 
 }
 
@@ -21,32 +24,8 @@ footer span{
     text-align: center;
     color: aliceblue;
     padding: 5px;
+    margin-bottom: 0;
 }
-
-.main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white;
-    width: 100%;
-    padding-left: 20px;
-}
-
-.full-width-image {
-    position: relative;
-}
-
-.image-text {
-    position: absolute;
-    top: 23%;
-    left: 5%;
-    transform: translateY(-50%);
-    font-size: 4rem;
-    color: #2d2929;
-    z-index: 1;
-    font-family: 'Roboto Slab', serif;
-}
-
 
 
 .center-container {
@@ -56,25 +35,73 @@ footer span{
     width: 100%;
 }
 
-.main-nav {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 30px;
-   
-}
 
 .main-nav a:hover {
-    font-weight: bold;
+    text-shadow: 0px 0px 0.5px #000;
     color: #d2bcbc;
 }
 
 
+.main-nav form {
+
+    gap: 10px;
+    position: absolute;
+    right: 1rem;
+   
+    
+} 
+
+
+.main-nav .links {
+    align-self: center;
+    display: flex;
+    gap: 1rem;
+}
+
+ input[type="search"] {
+    padding: 5px 10px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+
+    transition: all 0.3s;
+}
+
+ input[type="search"]:focus {
+    border-color: #171818;
+    outline: none;
+    box-shadow: 0 0 10px #171818;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    background-color: #171818;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    
+} 
+
+
+ input[type="submit"]:hover {
+    background-color: #8a8d8e;
+}  
 
 .full-width-image {
     width: 100%;
     overflow: hidden;
+}
+.image-text {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #2d2929;
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
 }
 
 .full-width-image img {
@@ -87,16 +114,71 @@ footer span{
 .main-nav a {
     text-decoration: none;
     color: black;
+    
+   
 }
 
 .my-logo{
     width: 10%;
     height: auto;
+    z-index: 1;
+}
 
+.services-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #363333;
+}
+
+.container-fluid {
+    background-color: rgb(241, 238, 238);
+}
+
+.section {
+    text-align: center;
+}
+
+.image-description, .our-services-text {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
 }
 
 
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: outset grey;
+    border-radius: 20px;
+}
 
+.image-description {
+    text-align: left;
+}
+
+.our-services-text {
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; 
+}
+
+.products-description{
+    width: 1000px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;   
+}
+
+
+/* Section start */
+.full-width-image {
+    position: relative;
+}
 
 .icon-container {
     text-align: center;
@@ -107,9 +189,9 @@ footer span{
 .icon-container h2 {
     text-align: center; 
     width: 100%; 
-    
-    font-size: 50px;
+    font-size: 30px;
     padding-bottom: 20px;
+    color: #363333;
 }
 
 .icon-container a {
@@ -118,8 +200,11 @@ footer span{
     margin-right: 30px; 
     display: inline-block;
     vertical-align: middle;
+    position: relative;
     
 }
+
+
 
 .icon-container a:last-child {
     margin-right: 0; 
@@ -135,6 +220,7 @@ footer span{
 
 .icon-container a:hover i {
     color: #c48c8c;
+    transform: scale(1.2);
     
 }
 
@@ -177,3 +263,70 @@ footer span{
 .info-item i {
     font-size: 20px;
 }
+
+
+.main-header {
+    padding-inline: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 6rem;
+}
+.my-logo {
+    width: 100px;
+}
+.my-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.main-nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.custom-form{
+    background-color:#d6e3f5
+}
+
+.custom-form-width {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+
+.icon-container a:hover::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 50%;         
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap; 
+    font-size: 1rem;
+}
+
+.konsult img {
+    max-width: 80%;  
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.konsult{
+    font-weight: bold;
+}
+
+.consultants{
+    background-color: rgb(241, 238, 238);
+}
+
